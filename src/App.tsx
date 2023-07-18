@@ -1,4 +1,3 @@
-import './App.css'
 import BooksList from './components/BooksList'
 import books from './data/data.json'
 
@@ -8,8 +7,8 @@ function App () {
       <header>
 
       </header>
-        <h1>Booky app</h1>
-      <main>
+      <main className='p-12 bg-primary'>
+        <h1 className='mb-12 text-center text-6xl font-bold'>Booky app</h1>
         <BooksList library={books.library} />
       </main>
     </>
