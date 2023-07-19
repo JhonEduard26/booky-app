@@ -4,17 +4,19 @@ interface Props {
   library: Library[]
 }
 
-export default function BooksList ({ library }: Props) {
+export const BooksList = ({ library }: Props) => {
   return (
-      <section className='grid grid-cols-1 gap-12'>
+      <section className="grid grid-cols-1 gap-12 place-items-center">
         {
           library.map(({ book }) => (
-            <div key={book.ISBN} className='p-2 rounded bg-white'>
+            <div key={book.ISBN} className="p-2 rounded bg-white">
               <figure>
                 <img src={book.cover} alt={book.title} />
               </figure>
-              <h2 className='font-semibold text-2xl'>{book.title}</h2>
-              <p>{book.author.name}</p>
+              <div className="">
+                <h2 className="font-semibold text-2xl">{book.title}</h2>
+                <p>{book.author.name}</p>
+              </div>
             </div>
           ))
         }
