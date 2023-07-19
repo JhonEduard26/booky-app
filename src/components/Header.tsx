@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import { Link } from 'wouter'
+
 import { MobileMenu } from './MobileMenu'
 
 export const Header = () => {
@@ -23,7 +25,7 @@ export const Header = () => {
       <nav className="w-full h-full">
         <ul className="flex justify-between items-center h-full">
           <li>
-            <a className="font-semibold text-xl" href="#">Booky</a>
+            <Link className="font-semibold text-xl" href="/">Booky</Link>
           </li>
           <li onClick={toggleMenu}>
             {toggleIcon()}

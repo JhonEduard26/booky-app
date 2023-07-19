@@ -1,13 +1,20 @@
-import { BooksList, Header } from './components'
-import books from './data/data.json'
+import { Switch, Route } from 'wouter'
+import { Header } from './components'
+
+import { Authors, Categories, Main, ReadList } from './pages'
 
 function App () {
   return (
     <>
       <Header />
       <main className='px-8 py-24 bg-primary'>
-        <h1 className='mb-12 text-center text-6xl font-bold'>Books List</h1>
-        <BooksList library={books.library} />
+        <Switch>
+          <Route path='/' component={Main} />
+          <Route path='/lista-lectura' component={ReadList} />
+          <Route path='/categorias' component={Categories} />
+          <Route path='/autores' component={Authors} />
+          <Route>404 Not found</Route>
+        </Switch>
       </main>
     </>
   )
