@@ -1,16 +1,17 @@
-import { type Library } from '../types'
+import { useBooks } from '../hooks/useBooks'
+import { BookLayout } from '../layouts/BookLayout'
 import { BookItem } from './'
 
-interface Props {
-  library: Library[]
-}
+export const BooksList = () => {
+  const { books } = useBooks()
 
-export const BooksList = ({ library }: Props) => {
   return (
     <section className="grid grid-cols-1 gap-12 place-items-center">
       {
-        library.map(({ book }) => (
-          <BookItem key={book.ISBN} book={book} />
+        books.map((book) => (
+          <BookLayout key={book.ISBN} book={book}>
+            <BookItem book={book} />
+          </BookLayout>
         ))
       }
     </section>

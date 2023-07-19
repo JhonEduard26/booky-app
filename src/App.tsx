@@ -7,7 +7,7 @@ function App () {
   return (
     <>
       <Header />
-      <main className='min-h-screen px-8 py-24 bg-primary'>
+      <main className='min-h-screen px-4 py-24 bg-primary'>
         <Switch>
           <Route path='/' component={Home} />
           <Route path='/lista-lectura' component={ReadList} />
