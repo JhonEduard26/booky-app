@@ -24,7 +24,7 @@ export const Header = () => {
     <header className="w-full h-16 px-8 fixed bg-white border-2 border-b-gray-800">
       <nav className="w-full h-full">
         <ul className="flex justify-between items-center h-full">
-          <li>
+          <li onClick={() => { setShowMenu(false) }}>
             <Link className="font-semibold text-xl" href="/">Booky</Link>
           </li>
           <li onClick={toggleMenu}>
@@ -32,7 +32,7 @@ export const Header = () => {
           </li>
         </ul>
       </nav>
-      <MobileMenu show={showMenu} />
+      <MobileMenu show={showMenu} toggleMenu={toggleMenu}/>
   </header>
   )
 }

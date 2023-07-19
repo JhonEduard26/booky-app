@@ -1,5 +1,5 @@
 export const Authors = () => {
   return (
-    <h1>Autores</h1>
+    <h1 className="text-center text-4xl font-bold">Autores</h1>
   )
 }

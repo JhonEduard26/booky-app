@@ -1,5 +1,5 @@
 export const Categories = () => {
   return (
-    <h1>Categorias</h1>
+    <h1 className="text-center text-4xl font-bold">Categorias</h1>
   )
 }
