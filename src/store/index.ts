@@ -1,6 +1,7 @@
 import { create } from 'zustand'
 
 import { type Book } from '../types'
+import { createJSONStorage, persist } from 'zustand/middleware'
 
 interface ReadListStore {
   booksForRead: Book[]
@@ -8,8 +9,16 @@ interface ReadListStore {
   removeBook: (isbn: string) => void
 }
 
-export const useReadListStore = create<ReadListStore>((set) => ({
-  booksForRead: [],
-  addBook: (book) => { set((state) => ({ booksForRead: [...state.booksForRead, book] })) },
-  removeBook: (isbn) => { set((state) => ({ booksForRead: state.booksForRead.filter((b) => b.ISBN !== isbn) })) }
-}))
+export const useReadListStore = create<ReadListStore>()(
+  persist(
+    (set) => ({
+      booksForRead: [],
+      addBook: (book) => { set((state) => ({ booksForRead: [...state.booksForRead, book] })) },
+      removeBook: (isbn) => { set((state) => ({ booksForRead: state.booksForRead.filter((b) => b.ISBN !== isbn) })) }
+    }),
+    {
+      name: 'books-storage',
+      storage: createJSONStorage(() => localStorage)
+    }
+  )
+)
