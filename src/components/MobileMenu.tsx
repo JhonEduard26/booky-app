@@ -13,7 +13,7 @@ export const MobileMenu = ({ show, toggleMenu }: Props) => {
             <Link href='./lista-lectura'>Lista de lectura</Link>
           </li>
           <li className='p-2 py-4 font-semibold underline underline-offset-8' onClick={toggleMenu}>
-            <Link href='./categorias'>Categorias</Link>
+            <Link href='./generos'>Géneros</Link>
           </li>
           <li className='p-2 py-4 font-semibold underline underline-offset-8' onClick={toggleMenu}>
             <Link href='./autores'>Autores</Link>

@@ -1,10 +1,12 @@
-import { useBooks } from '../hooks/useBooks'
 import { BookLayout } from '../layouts/BookLayout'
+import { type Book } from '../types'
 import { BookItem } from './'
 
-export const BooksList = () => {
-  const { books } = useBooks()
+interface Props {
+  books: Book[]
+}
 
+export const BooksList = ({ books }: Props) => {
   return (
     <section className="grid grid-cols-1 gap-12 place-items-center">
       {
