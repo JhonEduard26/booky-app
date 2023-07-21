@@ -44,7 +44,7 @@ $ pnpm run dev
 ## Links
 
 - [Repo](https://github.com/JhonEduard26/booky-app)
-- [Sitio]()
+- [Sitio](https://booky-app-react.netlify.app/)
 
 ## Tecnologias usadas
 
