@@ -7,18 +7,17 @@ interface Props {
 
 export const MobileMenu = ({ show, toggleMenu }: Props) => {
   return (
-      <div className={`transition-[top] duration-300 relative p-6 rounded-b border-2 border-gray-800 bg-white text-end ${show ? 'top-0' : 'top-[-360px]'} `}>
+      <div className={`transition-[top] duration-500 relative p-6 rounded-b border-2 border-title bg-bg-alt text-end ${show ? 'top-0' : 'top-[-360px]'} `}>
         <ul>
-          <li className='p-2 py-4 font-semibold underline underline-offset-8' onClick={toggleMenu}>
-            <Link href='./lista-lectura'>Lista de lectura</Link>
+          <li className="p-2 py-4 font-semibold" onClick={toggleMenu}>
+            <Link className="hover:underline hover:underline-offset-4" href='./lista-lectura'>Lista de lectura</Link>
           </li>
-          <li className='p-2 py-4 font-semibold underline underline-offset-8' onClick={toggleMenu}>
-            <Link href='./generos'>Géneros</Link>
+          <li className='p-2 py-4 font-semibold' onClick={toggleMenu}>
+            <Link className="hover:underline hover:underline-offset-4" href='./generos'>Géneros</Link>
           </li>
-          <li className='p-2 py-4 font-semibold underline underline-offset-8' onClick={toggleMenu}>
-            <Link href='./autores'>Autores</Link>
+          <li className='p-2 py-4 font-semibold' onClick={toggleMenu}>
+            <Link className="hover:underline hover:underline-offset-4" href='./autores'>Autores</Link>
           </li>
-          <li className='p-2 py-4 font-semibold underline underline-offset-8' onClick={toggleMenu}>Salir</li>
         </ul>
       </div>
   )

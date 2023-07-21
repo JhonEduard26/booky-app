@@ -10,7 +10,7 @@ export const Genres = () => {
           allGenres.map((genre) => (
             <span
               key={genre}
-              className="p-2 text-2xl rounded bg-secondary text-white"
+              className="p-2 text-2xl rounded bg-cyan-400 text-white"
             >
               {genre}
             </span>

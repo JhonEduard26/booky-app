@@ -1,6 +1,6 @@
 import { BookLayout } from '../layouts/BookLayout'
-import { type Book } from '../types'
 import { BookItem } from './'
+import { type Book } from '../types'
 
 interface Props {
   books: Book[]
@@ -8,7 +8,7 @@ interface Props {
 
 export const BooksList = ({ books }: Props) => {
   return (
-    <section className="grid grid-cols-1 gap-12 place-items-center">
+    <section className="grid grid-cols-2 gap-6 justify-items-center md:grid-cols-3 lg:grid-cols-4">
       {
         books.map((book) => (
           <BookLayout key={book.ISBN} book={book}>

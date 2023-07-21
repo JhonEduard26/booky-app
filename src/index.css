@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 :root {
+  font-family: 'Outfit', sans-serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

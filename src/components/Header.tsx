@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'wouter'
+import logo from './../assets/logo.png'
 
 import { MobileMenu } from './MobileMenu'
 
@@ -21,11 +22,13 @@ export const Header = () => {
   }
 
   return (
-    <header className="z-10 w-full h-16 px-4 fixed bg-white border-2 border-b-gray-800">
+    <header className="z-10 w-full h-16 px-4 fixed bg-bg-alt border-b-2 border-b-title lg:px-12">
       <nav className="w-full h-full">
         <ul className="flex justify-between items-center h-full">
           <li onClick={() => { setShowMenu(false) }}>
-            <Link className="font-semibold text-xl" href="/">Booky</Link>
+            <Link href="/">
+              <img width={112} src={logo} alt="Logo" />
+            </Link>
           </li>
           <li onClick={toggleMenu}>
             {toggleIcon()}

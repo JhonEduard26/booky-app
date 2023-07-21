@@ -25,8 +25,8 @@ export const Home = () => {
       <h1 className="mb-2 text-center text-4xl font-bold">Libros disponibles: {books.length - booksForRead.length}</h1>
       <h1 className="mb-12 text-center text-3xl font-semibold">En lista de lectura: {booksForRead.length}</h1>
       <div className="mb-6 text-center">
-        <h3 className="mb-2 text-xl">Filtrar por género</h3>
-        <select className="p-2 rounded" name="genres" onChange={onGenreChange}>
+        <h3 className="mb-4 text-xl">Filtrar por género</h3>
+        <select className="p-2 rounded outline" name="genres" onChange={onGenreChange}>
           <option value="Todas">Todas</option>
           {
             allGenres.map(genre => (

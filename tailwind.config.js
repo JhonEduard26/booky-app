@@ -7,14 +7,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        'primary': '#BABDBF',
-        'secondary': '#3F7373',
-        'tertiary': '#BF754B',
-        'quaternary': '#A64826',
-        'quinary': '#732B1A',
-      },
+        'bg-alt': '#B2D5EA',
+        'accent': '#F9E0AE',
+        'title-alt': '#E5F2D0',
+        'bg-main': '#FFFDD0',
+        'title': '#5B7C99',
+        'parragraph': '#B6BDC6',
+        'highlight': '#F0E0A2',
     },
-    plugins: [],
-  }
+  },
+  },
+  plugins: []
 }
-

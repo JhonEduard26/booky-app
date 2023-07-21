@@ -3,6 +3,12 @@ import { create } from 'zustand'
 import { type Book } from '../types'
 import { createJSONStorage, persist } from 'zustand/middleware'
 
+window.addEventListener('storage', (event) => {
+  if (event.key === 'books-storage') {
+    window.location.reload()
+  }
+})
+
 interface ReadListStore {
   booksForRead: Book[]
   addBook: (book: Book) => void
