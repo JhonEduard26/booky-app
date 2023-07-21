@@ -2,7 +2,7 @@
 
 Prueba tecnica aplicacion web de libros con lista de lectura
 
-### Funcionalidad
+## Funcionalidad
 
 - [x] Visualización de Libros Disponibles: La aplicación debe mostrar una lista de libros disponibles que el usuario pueda revisar.
 
@@ -16,6 +16,47 @@ Prueba tecnica aplicacion web de libros con lista de lectura
 
 - [x] Sincronización entre pestañas: Si el usuario abre la aplicación en dos pestañas diferentes, los cambios realizados en una pestaña deben reflejarse en la otra. Sin necesidad de usar Backend.
 
-- [] Despliegue: La aplicación debe estar desplegada en algún servicio de hosting gratuito (Netlify, Vercel, Firebase, etc) y debe ser accesible a través de una URL pública. Indica la URL en el README.
+- [x] Despliegue: La aplicación debe estar desplegada en algún servicio de hosting gratuito (Netlify, Vercel, Firebase, etc) y debe ser accesible a través de una URL pública. Indica la URL en el README.
 
 - [] Test: La aplicación debe tener AL MENOS un test. Haz el test que consideres más importante para tu aplicación.
+
+
+## Instalación
+
+```bash
+$ pnpm install
+```
+
+```bash
+$ pnpm run dev
+```
+
+## Pantallazos
+
+#### Vista de celular
+
+![Mobile screenshot](./src/assets/mobile.png)
+
+#### Vista de escritorio
+
+![Desktop screenshot](./src/assets/desktop.png)
+
+## Links
+
+- [Repo](https://github.com/JhonEduard26/booky-app)
+- [Sitio]()
+
+## Tecnologias usadas
+
+- [React](https://react.dev/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [Zustand](https://github.com/pmndrs/zustand/blob/main/readme.md)
+- [Wouter](https://github.com/molefrog/wouter#readme)
+- [React Hot Toast](https://react-hot-toast.com/)
+
+
+## Autor
+
+- GitHub - [JhonEduard26](https://www.github.com/JhonEduard26)
+
+- LinkedIn - [JhonEduard26](https://www.linkedin.com/in/jhon-eduard-bocanegra-ortiz/)
