@@ -5,7 +5,7 @@ export const Genres = () => {
   return (
     <>
       <h1 className="mb-8 text-center text-4xl font-bold">Géneros</h1>
-      <div className="flex flex-wrap gap-6">
+      <div className="flex justify-center flex-wrap gap-6">
         {
           allGenres.map((genre) => (
             <span

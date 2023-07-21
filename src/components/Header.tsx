@@ -27,10 +27,10 @@ export const Header = () => {
         <ul className="flex justify-between items-center h-full">
           <li onClick={() => { setShowMenu(false) }}>
             <Link href="/">
-              <img width={112} src={logo} alt="Logo" />
+              <img className="cursor-pointer" width={112} src={logo} alt="Logo" />
             </Link>
           </li>
-          <li onClick={toggleMenu}>
+          <li className="cursor-pointer" onClick={toggleMenu}>
             {toggleIcon()}
           </li>
         </ul>
